@@ -1,0 +1,12 @@
+let str = "JavaScript makes web development interesting";
+
+let words = str.split(" ");
+let max = "";
+
+for (let word of words) {
+    if (word.length > max.length) {
+        max = word;
+    }
+}
+
+console.log(max);

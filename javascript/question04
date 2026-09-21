@@ -1,0 +1,17 @@
+let str = "Java Script";
+let count = {};
+
+for (let ch of str) {
+    if (ch == " ")
+        continue;
+
+    ch = ch.toLowerCase();
+
+    if (count[ch])
+        count[ch]++;
+    
+    else
+        count[ch] = 1;
+}
+
+console.log(count);
